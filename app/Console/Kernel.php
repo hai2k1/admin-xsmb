@@ -26,9 +26,9 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-         $schedule->command('kqxs:checkmb')
-            ->everyMinute();
+        $schedule->command('kqxs:check');
     }
+
 
     /**
      * Register the commands for the application.

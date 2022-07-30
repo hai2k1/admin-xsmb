@@ -14,8 +14,6 @@ class AdminRoleUsersTableSeeder extends Seeder
      */
     public function run()
     {
-
-
         \DB::table('admin_role_users')->delete();
 
         \DB::table('admin_role_users')->insert(array(
