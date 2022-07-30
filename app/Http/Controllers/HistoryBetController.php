@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\HistoryBet;
+use App\Models\User;
 use Dcat\Admin\Admin;
 use Illuminate\Http\Request;
 
@@ -33,6 +34,9 @@ class HistoryBetController extends Controller
         $data = $request->all();
         $data['user_id'] = auth('api')->user()->id;
         $history= HistoryBet::create($data);
+        $user = User::find(auth('api')->user()->id);
+        $user->money = $user->money - $request->money;
+        $user->save();
         return response()->json($history,200);
     }
 
