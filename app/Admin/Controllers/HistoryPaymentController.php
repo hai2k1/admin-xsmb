@@ -77,7 +77,6 @@ class HistoryPaymentController extends AdminController
             $form->text('banker');
             $form->display('created_at');
             $form->display('updated_at');
-
         });
     }
 }

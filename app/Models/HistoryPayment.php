@@ -10,5 +10,13 @@ class HistoryPayment extends Model
 {
 	use HasDateTimeFormatter;
     protected $table = 'history_payment';
-    
+    protected $fillable = [
+        'type',	
+        'status',	
+        'user_id',	
+		'banker',
+        'bank_name',
+        'money',
+        'bank_id',
+    ]; 
 }
