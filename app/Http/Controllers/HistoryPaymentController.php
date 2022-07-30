@@ -30,7 +30,9 @@ class HistoryPaymentController extends Controller
      */
     public function store(Request $request)
     {
-        $history= HistoryPayment::create($request->all());
+        $data = $request->all();
+        $data['user_id'] = auth('api')->user()->id;
+        $history= HistoryPayment::create($data);
         return response()->json($history,200);
     }
 

@@ -240,8 +240,8 @@ Route::group([
         ->name('site.ldap.index');
     $router->get('/site/ldap/test', [SiteLDAPController::class, 'test'])
         ->name('site.ldap.test');
-//    $router->get('/site/version', [SiteVersionController::class, 'index'])
-//        ->name('site.version.index');
+   $router->get('/site/version', [SiteVersionController::class, 'index'])
+       ->name('site.version.index');
 
     /**
      * 自定义字段维护.
