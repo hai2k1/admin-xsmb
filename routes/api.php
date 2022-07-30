@@ -15,6 +15,7 @@ use App\Http\Controllers\AssetController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\HistoryPaymentController;
+use App\Http\Controllers\HistoryBetController;
 use Illuminate\Support\Facades\Route;
 
 /**
@@ -31,7 +32,8 @@ Route::group([
 });
 
 Route::group([
-    'prefix' => 'payments'
+    'prefix' => 'history'
 ], function () {
-    Route::resource('history',HistoryPaymentController::class);
+    Route::resource('payments',HistoryPaymentController::class);
+    Route::resource('bet',HistoryBetController::class);
 });
