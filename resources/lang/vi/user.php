@@ -1,0 +1,42 @@
+<?php 
+return [
+  'labels' => [
+    'title' => 'tổ chức',
+    'description' => 'vừa là tài khoản vừa là thành viên tổ chức',
+    'users' => 'người sử dụng',
+    'User' => 'người sử dụng',
+    'Department' => 'Phòng ban',
+    'Role' => 'Vai diễn',
+    'Permission' => 'sự cho phép',
+    'Batch Delete' => 'Xóa hàng loạt người dùng',
+    'Batch Delete Confirm' => 'Bạn có chắc chắn muốn xóa những người dùng đã chọn không?',
+    'Batch Force Delete' => 'Buộc xóa người dùng hàng loạt (không thể khôi phục)',
+    'Batch Force Delete Confirm' => 'Bạn có chắc chắn muốn buộc xóa những người dùng đã chọn không? (Thao tác này không thể đảo ngược)',
+    'Delete' => 'xóa người dùng',
+    'Delete Confirm' => 'xác nhận xóa?',
+    'Delete Confirm Description' => 'Việc xóa cũng sẽ xóa tất cả các ghi nhận tác giả được liên kết với nó',
+    'Import' => 'Nhập mẫu thông tin người',
+    'File Help' => 'Nhập hỗ trợ tệp xlsx và csv và các trường bắt buộc [tên người dùng, tên, giới tính] trong tiêu đề của bảng và hỗ trợ nhập trực tiếp tệp Excel được xuất bởi hệ thống quản lý tài sản. Nếu không có mật khẩu nào được chỉ định trong tệp đã nhập, thì mật khẩu đó bằng tên người dùng.',
+    'Rewrite' => 'trải ra',
+    'Merge' => 'hợp nhất',
+    'File' => 'tài liệu',
+    'LDAP' => 'LDAP',
+    'Deleted' => 'Nhân viên đã từ chức',
+  ],
+  'fields' => [
+    'name' => 'Tên',
+    'department' => [
+      'name' => 'Phòng ban',
+    ],
+    'gender' => 'giới tính',
+    'title' => 'Chức vụ',
+    'mobile' => 'điện thoại di động',
+    'email' => 'Thư',
+    'mode' => 'người mẫu',
+    'status' => 'Tình trạng tài khoản',
+    'department_id' => 'Phòng ban',
+    'file' => 'tài liệu',
+  ],
+  'options' => [
+  ],
+];

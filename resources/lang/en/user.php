@@ -1,0 +1,42 @@
+<?php 
+return [
+  'labels' => [
+    'title' => 'organize',
+    'description' => 'both an account and an organization member',
+    'users' => 'user',
+    'User' => 'user',
+    'Department' => 'department',
+    'Role' => 'Role',
+    'Permission' => 'permission',
+    'Batch Delete' => 'Delete users in bulk',
+    'Batch Delete Confirm' => 'Are you sure you want to delete the selected users?',
+    'Batch Force Delete' => 'Forcibly delete users in batches (unrecoverable)',
+    'Batch Force Delete Confirm' => 'Are you sure you want to force delete the selected users? (This operation is irreversible)',
+    'Delete' => 'delete users',
+    'Delete Confirm' => 'confirm deletion?',
+    'Delete Confirm Description' => 'Deletion will also remove all attributions associated with it',
+    'Import' => 'Import Person Information Template',
+    'File Help' => 'Import supports xlsx and csv files, and the required fields [username, name, gender] in the header of the table, and supports direct import of Excel files exported by the asset management system. If no password is specified in the imported file, the password is equal to the username.',
+    'Rewrite' => 'cover',
+    'Merge' => 'merge',
+    'File' => 'document',
+    'LDAP' => 'LDAP',
+    'Deleted' => 'Resigned staff',
+  ],
+  'fields' => [
+    'name' => 'Name',
+    'department' => [
+      'name' => 'department',
+    ],
+    'gender' => 'gender',
+    'title' => 'Position',
+    'mobile' => 'cell phone',
+    'email' => 'Mail',
+    'mode' => 'model',
+    'status' => 'Account status',
+    'department_id' => 'department',
+    'file' => 'document',
+  ],
+  'options' => [
+  ],
+];
