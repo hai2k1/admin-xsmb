@@ -46,6 +46,8 @@ namespace Dcat\Admin {
      * @property Grid\Column|Collection deleted_at
      * @property Grid\Column|Collection status
      * @property Grid\Column|Collection money
+     * @property Grid\Column|Collection category_game
+     * @property Grid\Column|Collection ratio
      * @property Grid\Column|Collection check_item
      * @property Grid\Column|Collection start_time
      * @property Grid\Column|Collection end_time
@@ -84,11 +86,12 @@ namespace Dcat\Admin {
      * @property Grid\Column|Collection exception
      * @property Grid\Column|Collection failed_at
      * @property Grid\Column|Collection category
-     * @property Grid\Column|Collection luotso
      * @property Grid\Column|Collection cachchoi
      * @property Grid\Column|Collection infor_bet
      * @property Grid\Column|Collection sodoncuoc
      * @property Grid\Column|Collection capdonhan
+     * @property Grid\Column|Collection luotso
+     * @property Grid\Column|Collection thangthua
      * @property Grid\Column|Collection bank_id
      * @property Grid\Column|Collection bank_name
      * @property Grid\Column|Collection banker
@@ -162,6 +165,8 @@ namespace Dcat\Admin {
      * @method Grid\Column|Collection deleted_at(string $label = null)
      * @method Grid\Column|Collection status(string $label = null)
      * @method Grid\Column|Collection money(string $label = null)
+     * @method Grid\Column|Collection category_game(string $label = null)
+     * @method Grid\Column|Collection ratio(string $label = null)
      * @method Grid\Column|Collection check_item(string $label = null)
      * @method Grid\Column|Collection start_time(string $label = null)
      * @method Grid\Column|Collection end_time(string $label = null)
@@ -200,11 +205,12 @@ namespace Dcat\Admin {
      * @method Grid\Column|Collection exception(string $label = null)
      * @method Grid\Column|Collection failed_at(string $label = null)
      * @method Grid\Column|Collection category(string $label = null)
-     * @method Grid\Column|Collection luotso(string $label = null)
      * @method Grid\Column|Collection cachchoi(string $label = null)
      * @method Grid\Column|Collection infor_bet(string $label = null)
      * @method Grid\Column|Collection sodoncuoc(string $label = null)
      * @method Grid\Column|Collection capdonhan(string $label = null)
+     * @method Grid\Column|Collection luotso(string $label = null)
+     * @method Grid\Column|Collection thangthua(string $label = null)
      * @method Grid\Column|Collection bank_id(string $label = null)
      * @method Grid\Column|Collection bank_name(string $label = null)
      * @method Grid\Column|Collection banker(string $label = null)
@@ -283,6 +289,8 @@ namespace Dcat\Admin {
      * @property Show\Field|Collection deleted_at
      * @property Show\Field|Collection status
      * @property Show\Field|Collection money
+     * @property Show\Field|Collection category_game
+     * @property Show\Field|Collection ratio
      * @property Show\Field|Collection check_item
      * @property Show\Field|Collection start_time
      * @property Show\Field|Collection end_time
@@ -321,11 +329,12 @@ namespace Dcat\Admin {
      * @property Show\Field|Collection exception
      * @property Show\Field|Collection failed_at
      * @property Show\Field|Collection category
-     * @property Show\Field|Collection luotso
      * @property Show\Field|Collection cachchoi
      * @property Show\Field|Collection infor_bet
      * @property Show\Field|Collection sodoncuoc
      * @property Show\Field|Collection capdonhan
+     * @property Show\Field|Collection luotso
+     * @property Show\Field|Collection thangthua
      * @property Show\Field|Collection bank_id
      * @property Show\Field|Collection bank_name
      * @property Show\Field|Collection banker
@@ -399,6 +408,8 @@ namespace Dcat\Admin {
      * @method Show\Field|Collection deleted_at(string $label = null)
      * @method Show\Field|Collection status(string $label = null)
      * @method Show\Field|Collection money(string $label = null)
+     * @method Show\Field|Collection category_game(string $label = null)
+     * @method Show\Field|Collection ratio(string $label = null)
      * @method Show\Field|Collection check_item(string $label = null)
      * @method Show\Field|Collection start_time(string $label = null)
      * @method Show\Field|Collection end_time(string $label = null)
@@ -437,11 +448,12 @@ namespace Dcat\Admin {
      * @method Show\Field|Collection exception(string $label = null)
      * @method Show\Field|Collection failed_at(string $label = null)
      * @method Show\Field|Collection category(string $label = null)
-     * @method Show\Field|Collection luotso(string $label = null)
      * @method Show\Field|Collection cachchoi(string $label = null)
      * @method Show\Field|Collection infor_bet(string $label = null)
      * @method Show\Field|Collection sodoncuoc(string $label = null)
      * @method Show\Field|Collection capdonhan(string $label = null)
+     * @method Show\Field|Collection luotso(string $label = null)
+     * @method Show\Field|Collection thangthua(string $label = null)
      * @method Show\Field|Collection bank_id(string $label = null)
      * @method Show\Field|Collection bank_name(string $label = null)
      * @method Show\Field|Collection banker(string $label = null)

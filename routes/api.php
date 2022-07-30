@@ -24,12 +24,5 @@ Route::group([
     Route::post('login', [AuthController::class, 'login']);
     Route::post('logout', [AuthController::class, 'logout']);
     Route::post('me', [AuthController::class, 'me']);
+    Route::resource('historypayments',\App\Http\Controllers\HistoryPaymentController::class);
 });
-
-/**
- * 设备标签查询.
- */
-Route::get('asset_card/device/{asset_number}', [AssetController::class, 'assetCardDevice'])
-    ->name('asset_card.device');
-
-Route::resource('assets', AssetController::class);
