@@ -17,7 +17,7 @@ class check_kqxs extends Command
      *
      * @var string
      */
-    protected $signature = 'kqxs:checkmb';
+    protected $signature = 'kqxs:check {name} {value}';
 
     /**
      * The console command description.
@@ -38,12 +38,14 @@ class check_kqxs extends Command
         $infor_bet = [];
         $lo4so = [];
         $lo3so = [];
-        $response = Http::get('https://xskt.vip/api/front/open/lottery/history/list/1/st45g');
+        $value = $this->argument('value');
+        $name = $this->argument('name');
+        Log::info($name);
+        $response = Http::get("https://xskt.vip/api/front/open/lottery/history/list/1/$value");
         $start = Carbon::create($response->json()['t']['openTime'])->timestamp;
         $end = Carbon::create($response->json()['t']['serverTime'])->timestamp;
         $timeshow = Carbon::create($response->json()['t']['issueList'][0]['openTime'])->timestamp;
         if($start-$end<$start-$timeshow){
-            Log::info($this->argument('name'));
             sleep($start-$end);
         }
         $kqs = trim($response->json($key = null)['t']['issueList']['0']['detail'], '[]"');
@@ -59,7 +61,7 @@ class check_kqxs extends Command
             }
         }
 
-        $bets = HistoryBet::getbets('Siêu Tốc 45 Giây', $response->json()['t']['issueList'][0]['openTime'], $response->json()['t']['openTime']);
+        $bets = HistoryBet::getbets($name, $response->json()['t']['issueList'][0]['openTime'], $response->json()['t']['openTime']);
         foreach ($bets as $bet) {
             if (strpos($bet->infor_bet, ',')) {
                 $infor_bet = explode(',', $bet->infor_bet);

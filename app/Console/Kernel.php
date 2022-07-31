@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Console;
-
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
@@ -26,7 +25,12 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('kqxs:check');
+        $schedule->command('kqxs:check "Siêu Tốc 45 Giây" st45g')->daily();
+        $schedule->command('kqxs:check "Siêu Tốc 1 Phút" st1p')->daily();
+        $schedule->command('kqxs:check "Miền Bắc" miba')->daily();
+        $schedule->command('kqxs:check "Hà Nội" hano')->daily();
+        $schedule->command('kqxs:check "Bạc Liêu" bali')->daily();
+
     }
 
 
